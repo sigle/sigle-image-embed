@@ -1,6 +1,5 @@
 // import { chromium as playwright } from "playwright-core";
 import chromium from "@sparticuz/chromium";
-import type { NextApiHandler } from "next";
 
 /**
  * Generate a screenshot of a tweet using Playwright
@@ -9,7 +8,7 @@ import type { NextApiHandler } from "next";
 // Cache for 1 day
 export const revalidate = 86400;
 
-const twitterEmbedEndpoint: NextApiHandler = async (req, res) => {
+const twitterEmbedEndpoint: any = async (req, res) => {
   const { id } = req.query;
 
   // const browser = await playwright.launch({
