@@ -8,7 +8,7 @@ import chromium from "@sparticuz/chromium";
 // Cache for 1 day
 export const revalidate = 86400;
 
-const twitterEmbedEndpoint: any = async (req, res) => {
+const twitterEmbedEndpoint = async (req: any, res: any) => {
   const { id } = req.query;
 
   // const browser = await playwright.launch({
