@@ -31,7 +31,7 @@ const twitterEmbedEndpoint: NextApiHandler = async (req, res) => {
   // await browser.close();
 
   res.setHeader("Content-Type", "image/png");
-  res.end("");
+  res.end("t");
 };
 
 export default twitterEmbedEndpoint;
