@@ -16,7 +16,7 @@ const twitterEmbedEndpoint: NextApiHandler = async (req, res) => {
     args: chromium.args,
     executablePath:
       process.env.NODE_ENV === "production"
-        ? await chromium.executablePath
+        ? await chromium.executablePath()
         : undefined,
     headless: true,
   });
