@@ -21,5 +21,5 @@ fly scale memory 512
 ```
 
 ```bash
-pnpm deploy
+pnpm deploy:production
 ```

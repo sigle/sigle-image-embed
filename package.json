@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "fly deploy --remote-only"
+    "deploy:production": "fly deploy --remote-only"
   },
   "dependencies": {
     "@sparticuz/chromium": "114.0.0",
